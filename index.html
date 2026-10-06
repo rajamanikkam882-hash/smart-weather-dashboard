@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Weather & Travel Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌤️ Smart Weather & Travel</h1>
+        <p>Weather information and travel suggestions</p>
+    </header>
+
+    <main class="container">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchButton">
+                🔍 Search
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+        <section id="weatherSection" class="weather-section">
+
+            <h2 id="cityName">City</h2>
+
+            <div class="current-weather">
+
+                <div>
+                    <p id="weatherIcon">🌤️</p>
+                    <h3 id="temperature">-- °C</h3>
+                    <p id="condition">Weather</p>
+                </div>
+
+                <div class="details">
+
+                    <p>💧 Humidity:
+                        <span id="humidity">--</span>
+                    </p>
+
+                    <p>💨 Wind:
+                        <span id="wind">--</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="travelSection" class="travel-section">
+
+            <h2>✈️ Travel Suggestion</h2>
+
+            <p id="travelSuggestion">
+                Search for a city to get a suggestion.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>📅 Forecast</h2>
+
+            <div id="forecastContainer" class="forecast-container"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
